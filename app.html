@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Typer</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:600" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type='text/javascript' src='http://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js'></script>
+
+</head>
+
+<body>
+  <div id="body">
+
+    <div><span id="time"></span></div>
+    <h1>Typer</h1>
+    <hr class="hr">
+    <h2>Please press <span id="start">start</span> when you are ready to begin. You have 30 seconds to type as many letters correctly as you can.</h2>
+    
+    <div id="word-container">
+      <p class="marquee">
+        <span id="mn">n</span>
+        <span id="mo">o</span>
+        <span id="mp">p</span>
+        <span id="mq">q</span>
+        <span id="mr">r</span>
+        <span id="ms">s</span>
+        <span id="mt">t</span>
+        <span id="mu">u</span>
+        <span id="mv">v</span>
+        <span id="ma">a</span>
+        <span id="mb">b</span>
+        <span id="mc">c</span>
+        <span id="md">d</span>
+        <span id="mw">w</span>
+        <span id="mx">x</span>
+        <span id="my">y</span>
+        <span id="mz">z</span>
+        <span id="me">e</span>
+        <span id="mf">f</span>
+        <span id="mg">g</span>
+        <span id="mh">h</span>
+        <span id="mi">i</span>
+        <span id="mj">j</span>
+        <span id="mk">k</span>
+        <span id="ml">l</span>
+        <span id="mm">m</span>
+      </p>
+    </div>
+    <!-- https://code.tutsplus.com/tutorials/creating-a-keyboard-with-css-and-jquery--net-5774 -->
+    <div id="container">
+      <ul id="keyboard">
+        <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
+        <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+        <li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+        <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+        <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+        <li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+        <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+        <li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+        <li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+        <li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+        <li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+        <li class="symbol"><span class="off">-</span><span class="on">_</span></li>
+        <li class="symbol"><span class="off">=</span><span class="on">+</span></li>
+        <li class="delete lastitem">delete</li>
+        <li class="tab">tab</li>
+        <li class="letter" id="q">q</li>
+        <li class="letter" id="w">w</li>
+        <li class="letter" id="e">e</li>
+        <li class="letter" id="r">r</li>
+        <li class="letter" id="t">t</li>
+        <li class="letter" id="y">y</li>
+        <li class="letter" id="u">u</li>
+        <li class="letter" id="i">i</li>
+        <li class="letter" id="o">o</li>
+        <li class="letter" id="p">p</li>
+        <li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+        <li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+        <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+        <li class="capslock">caps lock</li>
+        <li class="letter" id="a">a</li>
+        <li class="letter" id="s">s</li>
+        <li class="letter" id="d">d</li>
+        <li class="letter" id="f">f</li>
+        <li class="letter" id="g">g</li>
+        <li class="letter" id="h">h</li>
+        <li class="letter" id="j">j</li>
+        <li class="letter" id="k">k</li>
+        <li class="letter" id="l">l</li>
+        <li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+        <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+        <li class="return lastitem" id="Enter">return</li>
+        <li class="left-shift">shift</li>
+        <li class="letter" id="z">z</li>
+        <li class="letter" id="x">x</li>
+        <li class="letter" id="c">c</li>
+        <li class="letter" id="v">v</li>
+        <li class="letter" id="b">b</li>
+        <li class="letter" id="n">n</li>
+        <li class="letter" id="m">m</li>
+        <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+        <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+        <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+        <li class="right-shift lastitem">shift</li>
+        <li class="space lastitem">&nbsp;</li>
+      </ul>
+    </div>
+
+    <!-- this is hidden, this is where the user types -->
+    <input type="text" name="" value="">
+
+    <footer>
+      <ul>
+        <hr class="hr">
+        <!-- <button type="button" name="button" id="restart">R</button> -->
+        <li>Created by <a href="http://kristatriviso.com" target="_blank">Krista Triviso</a></li>
+        <li>General Assembly Game Asssignment</li>
+      </ul>
+      <button type="button" name="button" id="restart">R</button>
+      <button type="button" name="button" id="stopMusic">M</button>
+
+      <iframe id="sound" width="560" height="315" src="https://www.youtube.com/embed/wlXjP59jZCM?autoplay=1&start=25" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    </footer>
+  </div>
+
+
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

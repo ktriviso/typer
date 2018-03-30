@@ -1,0 +1,28 @@
+{
+  "name": "typer",
+  "version": "1.0.0",
+  "description": "Gerneral Assembly Project 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.generalassemb.ly:ktriviso/typer.git"
+  },
+  "keywords": [
+    "game",
+    "wdi",
+    "project",
+    "1"
+  ],
+  "author": "Krista Triviso <git.generalassemb.ly/ktriviso>, <github.com/ktriviso>",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  }
+}
