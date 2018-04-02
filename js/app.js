@@ -6,11 +6,15 @@ $(document).ready(function() {
   const seconds = 15;
   const display = $("#time");
   const sound = $('#sound');
+  const level = $('#level');
   const stopMusic = $('#stopMusic');
   const gameWords = $(".marquee span")
     .text()
     .split("")
     .slice(0, 26);
+
+    $(level).text(`Level ${speed}`)
+
 
   function getGreeting() {
     let userName;
